@@ -2,6 +2,7 @@
 
 const loadHome = () =>{
     const contentGrid  = document.querySelector('#content')
+    contentGrid.textContent=""
 
     //HEADER
     const headline = document.createElement('div')
