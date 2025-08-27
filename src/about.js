@@ -15,35 +15,11 @@ const loadAbout = ()=>{
     contactUsHeaderText.appendChild(contactUsH1)
     contactUsH1.textContent = "Contact Us"
 
+
+    //CONTACT INFO 
     const contactInfoGrid = document.createElement('div')
     contactInfoGrid.classList.add('contactInfoGrid')
     contentGrid.appendChild(contactInfoGrid)
-    
-
-    // const contactInfoGrid = document.createElement('div')
-    // const contactInfo = document.createElement('div')
-    // const contactInfoTitle = document.createElement('h3')
-    // const contactInfoName = document.createElement('p')
-    // const contactInfoPhone= document.createElement('p')
-    // const contactInfoEmail= document.createElement('p')
-
-    // contactInfoGrid.classList.add('contactInfoGrid')
-    // contactInfo.classList.add('contactInfo')
-    // contactInfoTitle.classList.add('contactTitle')
-    // contactInfoName.classList.add('contactName')
-    // contactInfoPhone.classList.add('contactPhone')
-    // contactInfoEmail.classList.add('contactEmail')
-
-    
-
-
-
-
-    // const contactMeInfoGrid = document.createElement('div')
-    // const contactMeInfo = document.createElement('div')
-    // const contactSupport=document.createElement('div')
-    // const contactSupportText=document.createElement('div')
-
 
     const contactDetails = [
         {
@@ -67,8 +43,6 @@ const loadAbout = ()=>{
 ]
 
     contactDetails.forEach(({title, name,phone,email})=>{
-        console.log(title, name,phone,email)
-        
         const contactInfo = document.createElement('div')
         const contactInfoTitle = document.createElement('h3')
         const contactInfoName = document.createElement('p')
@@ -92,10 +66,6 @@ const loadAbout = ()=>{
         contactInfoName.textContent=`${name}`
         contactInfoPhone.textContent=`${phone}`
         contactInfoEmail.textContent=`${email}`
-
-        console.log(contactInfoName,contactInfoEmail)
-
-        
 
     })
 

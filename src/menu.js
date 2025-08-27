@@ -62,11 +62,9 @@ const loadMenu =() =>{
         const menuCoursePrice = document.createElement('div')
         const menuCourseImg = document.createElement('img')
         const menuCourseText =document.createElement('p')
-        // menuCourseGrid.classList.add('menu-course-grid')
         menuCourse.classList.add('menu')
         menuCourseTitle.classList.add('menu-title')
         menuCoursePrice.classList.add('menu-price')
-        // contentGrid.appendChild(menuCourseGrid)
         menuCourseGrid.appendChild(menuCourse)
         menuCourse.appendChild(menuCourseTitle)
         menuCourse.appendChild(menuCoursePrice)
@@ -76,7 +74,6 @@ const loadMenu =() =>{
         menuCourseImg.src = `${courseImg}`
         menuCoursePrice.textContent=`${coursePrice}`
         menuCourseText.textContent = `${courseText}`
-        console.log(menuCourseImg, menuCourseText, menuCourseTitle)
     })
 
 }
